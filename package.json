@@ -4,7 +4,9 @@
   "description": "A full-stack application that allows a user to search the archives of the Rijksmuseum in Amsterdam",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,22 @@
   "bugs": {
     "url": "https://github.com/masoncpott/archiveSearch/issues"
   },
-  "homepage": "https://github.com/masoncpott/archiveSearch#readme"
+  "homepage": "https://github.com/masoncpott/archiveSearch#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.0",
+    "file-saver": "^2.0.5",
+    "mongoose": "^4.8.6",
+    "nodemon": "^2.0.6",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
 }

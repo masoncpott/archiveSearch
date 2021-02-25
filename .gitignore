@@ -1,1 +1,5 @@
 
+node_modules
+config.js
+react-client/dist/bundle.js
+exampleData.json
