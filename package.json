@@ -1,0 +1,19 @@
+{
+  "name": "archivesearch",
+  "version": "1.0.0",
+  "description": "A full-stack application that allows a user to search the archives of the Rijksmuseum in Amsterdam",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masoncpott/archiveSearch.git"
+  },
+  "author": "Mason C Pott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masoncpott/archiveSearch/issues"
+  },
+  "homepage": "https://github.com/masoncpott/archiveSearch#readme"
+}
