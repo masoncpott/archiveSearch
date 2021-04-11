@@ -3,17 +3,18 @@ const KEY = require('../config.js');
 
 const baseURL = 'https://www.rijksmuseum.nl/api/en/collection';
 
-const getInfoFromAPI = (searchQuery) => {
-  return axios.get(baseURL, {
-    params: {
-      key: KEY.TOKEN,
-      involvedMaker: searchQuery,
-    }
-  })
-    // .then((response) => console.log("SUCCES TO API", response.data))
-    // .catch((err) => console.log("FAILURE TO API", err))
-
-
+const getInfoFromAPI = async (searchQuery) => {
+  try {
+    const { data } = await axios.get(baseURL, {
+      params: {
+        key: KEY.TOKEN,
+        involvedMaker: searchQuery,
+      }
+    });
+    return data;
+  } catch (e) {
+    console.log('ERROR FROM API: ', e);
+  }
 };
 
 // getInfoFromApi('Rembrandt van Rijn');
