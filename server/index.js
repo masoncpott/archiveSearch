@@ -14,8 +14,8 @@ app.use(express.json());
 app.post('/items', async (req, res) => {
   const { data } = req.body;
   try {
-    const response = await getInfoFromAPI(data);
-    await db.save(response.artObjects);
+    const { artObjects } = await getInfoFromAPI(data);
+    await db.save(artObjects);
     const results = await db.sortAndReturn(data);
     res.status(200).send(results);
   } catch (e) {
