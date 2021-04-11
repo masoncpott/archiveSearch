@@ -21,4 +21,4 @@ const getInfoFromAPI = async (searchQuery) => {
 
 
 
-module.exports.getInfoFromAPI = getInfoFromAPI;
+module.exports = { getInfoFromAPI };
